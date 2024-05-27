@@ -1,0 +1,30 @@
+
+
+
+.loginCard {
+    width: 520px;
+    background-color: rgb(209, 81, 35);
+    height: 620px;
+    border-radius: 1rem;
+    padding: 4rem;
+    margin: 1rem;
+    margin-top: 120px;
+    margin-left: 620px;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 70vw;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+
+    }
+}
+
+@media only screen and (max-height: 650px) {
+    .card {
+        height: 620px;
+        
+    }
+}

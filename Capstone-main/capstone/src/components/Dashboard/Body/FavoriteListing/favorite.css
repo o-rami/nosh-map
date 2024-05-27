@@ -1,0 +1,52 @@
+.listingSection {
+    flex-basis: 70%;
+    margin-top: 50px;
+}
+
+.listingSection .heading {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.secContainer {
+    width: 100%;
+    margin: 1rem 0;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.secContainer .singleItem {
+    position: relative;
+    width: 190px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: .5rem;
+    border-radius: 10px;
+    background: rgb(255, 221, 177);
+    box-shadow: 0 2px 2px gray;
+}
+
+/* .secContainer .singleItem:hover {
+    background: rgb(251 146 60);
+    box-shadow: 0 2px 2px gray;
+} */
+
+.secContainer .singleItem img {
+    max-width: 190px;
+    max-height: 220px;
+    align-items: center;
+}
+.secContainer .singleItem .icon {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    color: white;
+}
+
+.secContainer .singleItem h3 {
+    color: black;
+}
+

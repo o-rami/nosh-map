@@ -1,0 +1,29 @@
+
+
+nav {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo-pic {
+    position: relative;
+    max-width: 150px;
+    height: auto;
+    margin-right: 0;
+}
+

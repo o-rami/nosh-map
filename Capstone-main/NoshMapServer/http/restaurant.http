@@ -1,0 +1,62 @@
+@url = http://localhost:8080/api/restaurant
+# @token =
+# Authorization: Bearer {{token}}
+
+### FIND all   ========================================
+GET {{url}} HTTP/1.1
+
+### FIND By Id ========================================
+GET {{url}}/1 HTTP/1.1
+
+###
+GET {{url}}/2 HTTP/1.1
+
+###
+GET {{url}}/3 HTTP/1.1
+
+###
+GET {{url}}/4 HTTP/1.1
+
+### ADD restaurant ====================================
+POST {{url}} HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Mario's Pizza",
+  "address": "1011 Westchester Ave",
+  "zipCode": "10459",
+  "website": "http://locandaverdenyc.com/",
+  "email": "info@locandaverdenyc.com",
+  "phone": "+1 212-925-3797",
+  "latitude": 40.720085,
+  "longitude": -74.01022,
+  "state": "NY",
+  "city": "Bronx",
+  "hoursInterval": null,
+  "cuisineType": "Mexican,Italian"
+}
+
+### Update Restaurant =================================
+PUT {{url}}/4 HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "restaurantId": 4,
+  "name": "Updated",
+  "address": "Updated",
+  "zipCode": "10459",
+  "website": "http://locandaverdenyc.com/",
+  "email": "Updated",
+  "phone": "+1 212-925-3797",
+  "latitude": 40.720085,
+  "longitude": -74.01022,
+  "state": "NY",
+  "city": "Bronx",
+  "hoursInterval": null,
+  "cuisineType": "Mexican,Italian"
+}
+
+### DELETE Restaurant =================================
+DELETE {{url}}/4 HTTP/1.1

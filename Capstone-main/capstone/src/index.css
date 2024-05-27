@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,600;1,600&family=Montserrat:wght@400&display=swap');
+
+* 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  background-color: rgb(207, 198, 198);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-height: 100vh;
+}
+
+.navbar {
+  justify-content: center;
+  height: 24px;
+  max-width: 1240px;
+
+}
+
+.title {
+  text-shadow: gray;
+  font-weight: bold;
+  
+}
+
+.alert {
+  margin-left: 40px;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+}
+
+
+@layer components {
+  .inputClass {
+    @apply text-center w-full h-9;
+  }
+}
+
+#addHeader {
+  margin: auto;
+  margin-top: initial;
+  margin-left: 15.2em;
+}
+
+#mapContainer {
+    margin: inherit;
+}
+
+#addMap {
+  position: absolute;
+  margin: auto;
+}
+
+#googleMap {
+  margin: auto;
+}
+
+#googleMap #mainMap{
+  height: 600px;
+  width: 600px;
+  margin: auto;
+}
+
+#guestMap {
+  margin-top: 73px;
+  margin-left: 20px;
+}

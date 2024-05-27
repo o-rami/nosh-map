@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+footer {
+    position: relative;
+    width: 100%;
+    background: rgb(207, 198, 198);
+    min-height: 100px;
+    padding: 20px 50px;
+    margin-top: 10px;
+  }
+  
+  

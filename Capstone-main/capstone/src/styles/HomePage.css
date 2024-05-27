@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,600;1,600&family=Montserrat:wght@400&display=swap');
+
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.imgBox {
+    margin-top: 100px;
+    width: 500px;
+    height: auto;
+    display: flex;
+    right: 0;
+    z-index: -1;
+    
+}
+
+.content .textBox{
+    position: relative;
+    max-width: 600px;
+    margin-left: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@layer utilities {
+    .opinions {
+        @apply relative text-black text-[4vw] font-[900]
+    }
+    .opinions::before {
+        @apply content-['opinions...'] absolute text-primary border-r-2
+        border-orange top-0 left-0 w-0 h-[100%] overflow-hidden
+        animate-animate
+    }
+}
+
